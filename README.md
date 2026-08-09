@@ -1,4 +1,5 @@
-# litecrew-workspace - All your AI work. One workspace.
+# litecrew-workspace
+**All your AI work. One workspace.**
 
 ![litecrew-workspace — Eve (supervisor) orchestrating subagents over Markdown files](docs/assets/hero-banner.png)
 
