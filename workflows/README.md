@@ -13,8 +13,9 @@ workspace. They are split into two layers.
 
 ## Layer 2: Capture and placement protocols (mandatory gates)
 
-These four protocols turn "capture knowledge" from a slogan into checkable gates. They
-are referenced from `task-lifecycle.md §4.2`.
+These protocols turn "capture knowledge" from a slogan into checkable gates. They
+are referenced from `task-lifecycle.md §4.2`, which adds a fourth gate (handbook
+review) that does not have its own protocol file.
 
 | File                                | Audience        | Purpose                                                                                                |
 | ----------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------ |
