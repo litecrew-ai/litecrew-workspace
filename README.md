@@ -1,8 +1,6 @@
 # litecrew-workspace
 
-> Your AI CLI has brains but no memory. **litecrew-workspace is the memory.**
-
-**Self-hosted · File-system-native · Self-evolving**
+> One workspace for all your AI work.
 
 ![litecrew-workspace — Eve (supervisor) orchestrating subagents over Markdown files](docs/assets/hero-banner.png)
 
@@ -12,18 +10,20 @@
   <a href="https://github.com/litecrew-ai/litecrew-workspace"><img src="https://img.shields.io/badge/GitHub-litecrew--ai/litecrew--workspace-181717?style=for-the-badge&logo=github" alt="GitHub Repo"></a>
 </p>
 
-`litecrew-workspace` is **not an application** — it is a directory of plain-Markdown
-conventions that turns your AI coding CLI into a **self-hosted AI team**: a supervisor
-named Eve plans the work, specialist subagents execute it, and durable knowledge
-accumulates so the workspace gets smarter with every closed task.
+**The workspace for long-running AI work.** Build software, create videos,
+research ideas, write documents, and run projects with AI — all in one
+persistent workspace.
 
-You keep talking to your CLI the way you always do. The directory does the rest.
+AI work is fragmented today. Claude Code and Cursor handle your software.
+Veo handles your video. ChatGPT handles your research. Midjourney handles
+your art. The work scatters across chats, repos, and screenshots — and every
+session starts from zero.
 
-Modern AI coding CLIs (Claude Code, Codex, Cursor, …) are powerful but amnesiac:
-every session starts from zero, decisions evaporate, multi-week projects degrade
-into *"wait, what did we decide last week?"*. `litecrew-workspace` adds the missing
-layer — **persistence, orchestration, and a learning loop built from plain Markdown**.
-No code, no SDK, no daemon. Nothing leaves your machine.
+`litecrew-workspace` brings it all together. It's a self-hosted directory of
+plain-Markdown conventions: Eve (a supervisor agent) routes each piece of work
+to the right specialist subagent, knowledge persists as files, and that
+knowledge auto-loads when relevant — so the workspace becomes continuous,
+not session-bound. No SaaS, no cloud, no telemetry.
 
 ## Quick start
 
@@ -90,14 +90,12 @@ sessions — the workspace state *is* the file system.
 
 | | |
 |---|---|
-| **Lives in your CLI, not on top of it** | Claude Code, Codex, Cursor, opencode — anything that reads `AGENTS.md`. No new binary, no daemon, no port. |
-| **Everything is a file** | Goals, Tasks, Knowledge, Sessions — plain Markdown. `grep`, `git diff`, `bat` all work. No database to back up. |
-| **Goals are first-class** | Multi-week projects get a real shape: success criteria, task chains, progress log. Not just session history. |
-| **Supervisor + subagents, in Markdown** | Eve plans and dispatches but never writes code. Subagents are role files under `agents/`. The split is a contract, not a config flag. |
-| **Self-evolving through use** | A Task isn't done until lessons are filed. Knowledge accumulates across Tasks; the workspace grows into your domain over time, no retraining or fine-tuning required. |
-| **Empty by design** | Ships with the paradigm, no opinions about your domain. SaaS, research, writing, consulting — same skeleton. |
-| **CLI-agnostic, model-agnostic** | Today Claude, tomorrow GPT-6, day-after whatever. Your workspace survives every model migration. |
-| **Zero lock-in** | If litecrew vanishes tomorrow, you still have a clean directory of plain Markdown. Try that with a database-backed agent. |
+| **One workspace, many domains** | Software, video, research, writing, ops — Eve routes each piece of work to the right specialist subagent. No more context-switching across five tools. |
+| **Knowledge auto-loads at session start** | When you describe new work, Eve pulls relevant lessons from past Tasks. The workspace becomes continuous, not session-bound. |
+| **Goals are first-class** | Multi-week projects have a real shape: success criteria, task chains, progress log. Not just session history. |
+| **Everything is plain Markdown** | Goals, Tasks, Knowledge, Sessions — `grep`, `git diff`, `bat` all work. No database to back up. |
+| **Empty by design** | Ships with the paradigm, no opinions about your domain. Software, research, writing, hardware — same skeleton. |
+| **CLI-agnostic, model-agnostic, zero lock-in** | Works with Claude Code, Codex, Cursor, opencode. Today Claude, tomorrow GPT-6. If litecrew vanishes, you keep a clean directory of Markdown. |
 
 ## What it is NOT
 
@@ -105,6 +103,7 @@ sessions — the workspace state *is* the file system.
 - **NOT a SaaS.** No sign-up, no cloud, no telemetry. Files stay on your disk.
 - **NOT an agent framework.** No Python SDK, no LangGraph-style graphs, no API to learn.
 - **NOT a note-taking app for humans.** Obsidian is for you to read. litecrew is for the AI to read **and** write.
+- **NOT domain-specific.** We're not Cursor for code, not Midjourney for art, not Veo for video. We're the workspace that orchestrates them all.
 
 ## What ships in the box
 
