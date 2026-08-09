@@ -2,6 +2,8 @@
 
 > Your AI CLI has brains but no memory. **litecrew-workspace is the memory.**
 
+**Self-hosted · File-system-native · Self-evolving**
+
 ![litecrew-workspace — Eve (supervisor) orchestrating subagents over Markdown files](docs/assets/hero-banner.png)
 
 <p align="center">
@@ -11,18 +13,17 @@
 </p>
 
 `litecrew-workspace` is **not an application** — it is a directory of plain-Markdown
-conventions that, when your AI CLI reads it, turns the CLI into a project-aware
-supervisor named **Eve**. Eve plans your request, splits it into Goals and Tasks,
-hires specialist subagents for each piece, and captures the results as durable
-knowledge that survives across sessions.
+conventions that turns your AI coding CLI into a **self-hosted AI team**: a supervisor
+named Eve plans the work, specialist subagents execute it, and durable knowledge
+accumulates so the workspace gets smarter with every closed task.
 
 You keep talking to your CLI the way you always do. The directory does the rest.
 
 Modern AI coding CLIs (Claude Code, Codex, Cursor, …) are powerful but amnesiac:
 every session starts from zero, decisions evaporate, multi-week projects degrade
 into *"wait, what did we decide last week?"*. `litecrew-workspace` adds the missing
-layer — **persistence, orchestration, and forced knowledge capture** — as plain
-Markdown. No code, no SDK, no daemon.
+layer — **persistence, orchestration, and a learning loop built from plain Markdown**.
+No code, no SDK, no daemon. Nothing leaves your machine.
 
 ## Quick start
 
@@ -89,11 +90,11 @@ sessions — the workspace state *is* the file system.
 
 | | |
 |---|---|
-| **Lives in your CLI, not on top of it** | Claude Code, Codex, Cursor, Aider — anything that reads `AGENTS.md`. No new binary, no daemon, no port. |
+| **Lives in your CLI, not on top of it** | Claude Code, Codex, Cursor, opencode — anything that reads `AGENTS.md`. No new binary, no daemon, no port. |
 | **Everything is a file** | Goals, Tasks, Knowledge, Sessions — plain Markdown. `grep`, `git diff`, `bat` all work. No database to back up. |
 | **Goals are first-class** | Multi-week projects get a real shape: success criteria, task chains, progress log. Not just session history. |
 | **Supervisor + subagents, in Markdown** | Eve plans and dispatches but never writes code. Subagents are role files under `agents/`. The split is a contract, not a config flag. |
-| **Forced knowledge capture** | A Task isn't done until lessons are filed. The workspace gets smarter, not just fuller. |
+| **Self-evolving through use** | A Task isn't done until lessons are filed. Knowledge accumulates across Tasks; the workspace grows into your domain over time, no retraining or fine-tuning required. |
 | **Empty by design** | Ships with the paradigm, no opinions about your domain. SaaS, research, writing, consulting — same skeleton. |
 | **CLI-agnostic, model-agnostic** | Today Claude, tomorrow GPT-6, day-after whatever. Your workspace survives every model migration. |
 | **Zero lock-in** | If litecrew vanishes tomorrow, you still have a clean directory of plain Markdown. Try that with a database-backed agent. |
@@ -139,7 +140,7 @@ content has been stripped so you start clean.
 
 - **Claude Code**: reads `CLAUDE.md` automatically. This repo symlinks `CLAUDE.md` →
   `AGENTS.md`, so Eve's contract loads with zero configuration.
-- **Codex / Cursor / Aider / others**: most modern AI CLIs auto-load `AGENTS.md` or
+- **Codex / Cursor / opencode / others**: most modern AI CLIs auto-load `AGENTS.md` or
   an equivalent project-level file. If yours doesn't, open `AGENTS.md` in your first
   message and the rest of the conversation will follow the same paradigm.
 
