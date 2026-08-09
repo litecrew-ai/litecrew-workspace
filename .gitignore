@@ -1,0 +1,26 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.python-version
+uv.lock
+
+# Virtual environments
+.venv
+
+# Artifacts: external repos, experiment outputs, large binaries
+# (litecrew-workspace tracks only meta files — goals/tasks/agents/handbooks/knowledge.
+# Generated product code and binaries live under artifacts/ and are not versioned.)
+# Note: the leading / anchors this to the repo root so same-named subdirectories
+# elsewhere (e.g. inside a docs site) are not accidentally ignored.
+/artifacts/
+
+# Secrets: API tokens, credentials
+config/*.secret.json
+config/*.token
+.env
+.env.*
+node_modules
