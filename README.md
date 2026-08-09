@@ -4,6 +4,12 @@
 
 ![litecrew-workspace — Eve (supervisor) orchestrating subagents over Markdown files](docs/assets/hero-banner.png)
 
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License: MIT"></a>
+  <a href="https://github.com/litecrew-ai/litecrew-workspace/stargazers"><img src="https://img.shields.io/github/stars/litecrew-ai/litecrew-workspace?style=for-the-badge&label=Stars" alt="GitHub Stars"></a>
+  <a href="https://github.com/litecrew-ai/litecrew-workspace"><img src="https://img.shields.io/badge/GitHub-litecrew--ai/litecrew--workspace-181717?style=for-the-badge&logo=github" alt="GitHub Repo"></a>
+</p>
+
 `litecrew-workspace` is **not an application** — it is a directory of plain-Markdown
 conventions that, when your AI CLI reads it, turns the CLI into a project-aware
 supervisor named **Eve**. Eve plans your request, splits it into Goals and Tasks,
@@ -21,7 +27,7 @@ Markdown. No code, no SDK, no daemon.
 ## Quick start
 
 ```bash
-git clone <this-repo> my-workspace
+git clone https://github.com/litecrew-ai/litecrew-workspace.git my-workspace
 cd my-workspace
 
 # Open this directory in your AI CLI of choice.

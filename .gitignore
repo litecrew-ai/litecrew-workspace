@@ -24,3 +24,8 @@ config/*.token
 .env
 .env.*
 node_modules
+
+# Local AI-CLI tool caches (auto-created by Claude Code and friends when skills load)
+# These are per-developer state, not part of the OSS workspace.
+.agents/
+.claude/
