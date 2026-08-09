@@ -1,16 +1,8 @@
-<h1 align="center">litecrew-workspace</h1>
+# litecrew-workspace - All your AI work. One workspace.
 
-<p align="center"><strong>All your AI work. One workspace.</strong></p>
+![litecrew-workspace — Eve (supervisor) orchestrating subagents over Markdown files](docs/assets/hero-banner.png)
 
-<p align="center">
-  <img src="docs/assets/hero-banner.png" alt="litecrew-workspace — Eve (supervisor) orchestrating subagents over Markdown files">
-</p>
-
-<p align="center">
-  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License: MIT"></a>
-  <a href="https://github.com/litecrew-ai/litecrew-workspace/stargazers"><img src="https://img.shields.io/github/stars/litecrew-ai/litecrew-workspace?style=for-the-badge&label=Stars" alt="GitHub Stars"></a>
-  <a href="https://github.com/litecrew-ai/litecrew-workspace"><img src="https://img.shields.io/badge/GitHub-litecrew--ai/litecrew--workspace-181717?style=for-the-badge&logo=github" alt="GitHub Repo"></a>
-</p>
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE) [![Stars](https://img.shields.io/github/stars/litecrew-ai/litecrew-workspace?style=for-the-badge&label=Stars)](https://github.com/litecrew-ai/litecrew-workspace/stargazers) [![GitHub](https://img.shields.io/badge/GitHub-litecrew--ai/litecrew--workspace-181717?style=for-the-badge&logo=github)](https://github.com/litecrew-ai/litecrew-workspace)
 
 **The workspace for long-running AI work.** Build software, create videos,
 research ideas, write documents, and run projects with AI — all in one
