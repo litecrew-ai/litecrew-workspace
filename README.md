@@ -1,8 +1,10 @@
-# litecrew-workspace
+<h1 align="center">litecrew-workspace</h1>
 
-> All your AI work. One workspace.
+<p align="center"><strong>All your AI work. One workspace.</strong></p>
 
-![litecrew-workspace — Eve (supervisor) orchestrating subagents over Markdown files](docs/assets/hero-banner.png)
+<p align="center">
+  <img src="docs/assets/hero-banner.png" alt="litecrew-workspace — Eve (supervisor) orchestrating subagents over Markdown files">
+</p>
 
 <p align="center">
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge" alt="License: MIT"></a>
